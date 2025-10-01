@@ -2,13 +2,14 @@ export function Hero() {
   return (
     <section id="home" className="bg-white py-24 md:py-32">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto text-center">
           <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight text-[#7f3800] sm:text-6xl md:text-7xl">
             Sua Internet nas <span className="text-[#ffcc00]">Alturas</span>
           </h1>
 
           <p className="mb-12 text-pretty text-lg text-[#894a17] md:text-xl">
-            Conecte-se com velocidade e estabilidade. Internet fibra óptica a partir de R$ 60,00 por mês.
+            Conecte-se com velocidade e estabilidade. Internet fibra óptica a
+            partir de R$ 60,00 por mês.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -30,5 +31,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

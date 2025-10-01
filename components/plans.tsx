@@ -1,26 +1,41 @@
-import { Check } from "lucide-react"
+import { Check } from "lucide-react";
 
 const plans = [
   {
     name: "Básico",
     speed: "50",
     price: "60,00",
-    features: ["Ideal para navegar e redes sociais", "Streaming em HD", "Até 3 dispositivos", "Instalação grátis"],
+    features: [
+      "Ideal para navegar e redes sociais",
+      "Streaming em HD",
+      "Até 3 dispositivos",
+      "Instalação grátis",
+    ],
   },
   {
     name: "Padrão",
     speed: "90",
     price: "70,00",
     popular: true,
-    features: ["Perfeito para trabalho e estudo", "Streaming em Full HD", "Até 5 dispositivos", "Instalação grátis"],
+    features: [
+      "Perfeito para trabalho e estudo",
+      "Streaming em Full HD",
+      "Até 5 dispositivos",
+      "Instalação grátis",
+    ],
   },
   {
     name: "Premium",
     speed: "150",
     price: "80,00",
-    features: ["Máxima velocidade para gamers", "Streaming em 4K", "Dispositivos ilimitados", "Instalação grátis"],
+    features: [
+      "Máxima velocidade para gamers",
+      "Streaming em 4K",
+      "Dispositivos ilimitados",
+      "Instalação grátis",
+    ],
   },
-]
+];
 
 export function Plans() {
   return (
@@ -30,7 +45,9 @@ export function Plans() {
           <h2 className="mb-4 text-balance text-4xl font-bold tracking-tight text-[#7f3800] sm:text-5xl">
             Escolha Seu Plano
           </h2>
-          <p className="text-pretty text-lg text-[#894a17]">Planos flexíveis para todas as necessidades</p>
+          <p className="text-pretty text-lg text-[#894a17]">
+            Planos flexíveis para todas as necessidades
+          </p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 max-w-5xl mx-auto">
@@ -38,7 +55,9 @@ export function Plans() {
             <div
               key={plan.name}
               className={`relative flex flex-col rounded-xl border-2 bg-white p-8 ${
-                plan.popular ? "border-[#ffcc00] shadow-lg" : "border-[#894a17]/20"
+                plan.popular
+                  ? "border-[#ffcc00] shadow-lg"
+                  : "border-[#894a17]/20"
               }`}
             >
               {plan.popular && (
@@ -50,14 +69,20 @@ export function Plans() {
               )}
 
               <div className="text-center pb-6 border-b border-[#894a17]/10">
-                <h3 className="text-xl font-bold text-[#7f3800] mb-4">{plan.name}</h3>
+                <h3 className="text-xl font-bold text-[#7f3800] mb-4">
+                  {plan.name}
+                </h3>
                 <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-5xl font-bold text-[#7f3800]">{plan.speed}</span>
+                  <span className="text-5xl font-bold text-[#7f3800]">
+                    {plan.speed}
+                  </span>
                   <span className="text-xl text-[#894a17]">MB</span>
                 </div>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className="text-sm text-[#894a17]">R$</span>
-                  <span className="text-3xl font-bold text-[#ffcc00]">{plan.price}</span>
+                  <span className="text-3xl font-bold text-[#ffcc00]">
+                    {plan.price}
+                  </span>
                   <span className="text-sm text-[#894a17]">/mês</span>
                 </div>
               </div>
@@ -72,7 +97,7 @@ export function Plans() {
               </ul>
 
               <a
-                href="https://wa.me/5599984264983"
+                href="https://wa.me/5599981304269"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full rounded-lg py-3 text-center text-sm font-semibold transition-all ${
@@ -88,5 +113,5 @@ export function Plans() {
         </div>
       </div>
     </section>
-  )
+  );
 }
