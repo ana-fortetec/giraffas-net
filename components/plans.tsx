@@ -9,7 +9,6 @@ const plans = [
       "Ideal para navegar e redes sociais",
       "Streaming em HD",
       "Até 3 dispositivos",
-      "Instalação grátis",
     ],
   },
   {
@@ -21,7 +20,6 @@ const plans = [
       "Perfeito para trabalho e estudo",
       "Streaming em Full HD",
       "Até 5 dispositivos",
-      "Instalação grátis",
     ],
   },
   {
@@ -32,7 +30,6 @@ const plans = [
       "Máxima velocidade para gamers",
       "Streaming em 4K",
       "Dispositivos ilimitados",
-      "Instalação grátis",
     ],
   },
 ];
